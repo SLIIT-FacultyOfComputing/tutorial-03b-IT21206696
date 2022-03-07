@@ -5,6 +5,12 @@ using namespace std;
 int volume(int height, int width, int length);
 
 // 1. Define a structure called Box
+struct box
+{
+	int height;
+	int length;
+	int width;
+}boxBox1, boxBox2;
 // have the integer data types Height, Width, Length
 
 // Do not change the main function
@@ -32,12 +38,17 @@ int main() {
     cin >> Length of Box 2;
     
     // 5. Replace the coding below to pass the Box type structure
-    totalVolume = volume( , , )
-             + volume( , , );
+    totalVolume = volume( boxBox1.height, boxBox1.length, boxBox1.width )
+             + volume(boxBox2.height, boxBox2.length, boxBox2.width);
     
     cout << "Volume of Box is " << totalVolume << endl;
     
     return 0;
+}
+
+int volume(int height, int width, int length);
+{
+  return height * width * length;
 }
 
 // Implement the functions here
